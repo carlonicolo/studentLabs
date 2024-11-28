@@ -1,1 +1,2 @@
-# studentLabs
+# Students repository
+
