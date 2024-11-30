@@ -21,3 +21,49 @@ Expected output
 result: 38
 big result: 54872
 '''
+
+
+xValue = 5
+yValue = 9
+result = 0
+bigResult = 0
+	
+	 
+	#	increment xValue by 3
+
+xValue = xValue + 3
+
+	#	decrement yValue by xValue
+
+yValue = yValue - xValue
+
+	#	multiply xValue times yValue giving result
+
+result = xValue * yValue
+
+	#	increment result by result
+
+result = result + result
+
+	#	decrement result by 1
+
+result = result - 1
+
+	#	assign result modulo result to yValue
+
+yValue = (result % result)
+
+	#	increment result by result added to xValue
+
+result = result + result + xValue
+
+	#	assign result times result times result to bigResult
+
+bigResult = result * result *result;
+
+	#	increment result by xValue times yValue
+
+result =result + (xValue * yValue);
+	
+print("Result : ", result)
+print("Big result : ", bigResult)
