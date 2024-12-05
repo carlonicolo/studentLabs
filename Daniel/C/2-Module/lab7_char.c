@@ -44,9 +44,10 @@ int main()
 
 	printf("\n#################\n\n");
 
+	char confronto = '0';
+
 	for(int i = 0; i < 10;i++){
 
-		char confronto = '0';
 		printf(" '%d' - '%c' is : '%d'\n", confronto - 48 + i, zero, confronto - 48 + i );
 		
 		
