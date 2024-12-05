@@ -40,9 +40,9 @@ while (check == 0);
 
 int array[grandezza];
 
-// Chiedo di inserire i valori al utente e li inserisco nel array
+// Chiedo di inserire i valori all' utente e li inserisco nell' array
 
-for (int i = 0; i <= grandezza - 1; i++)
+for (int i = 0; i <= grandezza; i++)
 {
     printf("Inserisci il %d° valore :", i + 1);
     scanf("%d", &array[i]);
@@ -51,7 +51,7 @@ for (int i = 0; i <= grandezza - 1; i++)
 for (int j = 0; j <= grandezza; j++)
 {
 
-    if (j % 2 == 0 && j >= 1)
+    if (j % 2 == 0)
     {
         printf("%d ", array[j]);
     }
