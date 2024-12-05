@@ -25,3 +25,34 @@ Expected output
 20-02-2016 - DD-MM-YYYY format
 20-2-2016 - D-M-Y format
 */
+
+#include <stdio.h>
+
+int main(){
+
+    
+
+    int year = 2016;
+    int mounth = 02;
+    int day = 20;
+
+    char years_char [] = "YYYY";
+    char mount_char [] = "MM";
+    char day_char [] = "DD";
+    char iso_n[] = "ISO 8601";
+    char formato [] = "format";
+
+    printf("%d-%d-%d - %s-%s-%s %s - %s\n",year,mounth,day,years_char,mount_char,formato,iso_n);
+    printf("%d-%d-%d - %s-%s-%s - %s\n",mounth,day,year,mount_char,day_char,years_char,formato );
+    printf("%d-%d-%d - %s - %s - %s - %s\n",day,mounth,year,day_char,mount_char,years_char,formato);
+
+    char d = 'D';
+    char m = 'M';
+    char y = 'Y';
+    int mese = 2;
+    printf("%d-%d-%d - %c-%c-%c - %s\n",day,mese,year,d,m,y,formato);
+
+
+
+    return 0;
+}

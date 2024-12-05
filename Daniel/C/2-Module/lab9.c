@@ -23,6 +23,10 @@ The day of the week is: Monday
 int main(void) 
 {
 	int dayOfWeek = 1;
-	/* your code */
+	
+	if(dayOfWeek = 1){
+		printf("The day of the week is : Monday\n");
+	}
+
 	return 0;
 }

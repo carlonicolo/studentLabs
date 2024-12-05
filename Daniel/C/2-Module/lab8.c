@@ -22,11 +22,16 @@ The value of n is -3
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main(void) 
 {
 	int n = -3;
-	/* your code */
+	int x;
+	
+
+
+	
 	int x = abs(n);
     printf("The absolutes value of %d is %d\n", n, x);
 	printf("The value of n is %d\n", n);
