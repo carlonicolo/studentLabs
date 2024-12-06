@@ -41,8 +41,22 @@ int main(){
     float votoA3 = 4.20;
     float avgA = 4.30;
 
+    // studenteB voti :
 
-    char angolo[47] = "Student name 1stYGrade 2ndYGrade 3rdGrade Avg\n";
+    float votoB1 = 4.30;
+    float votoB2 = 4.40;
+    float votoB3 = 4.70;
+    float avgB = 4.47;
+
+    // studeteC voti :
+
+    float votoC1 = 4.30;
+    float votoC2 = 4.80;
+    float votoC3 = 4.90;
+    float avgC = 4.67;
+
+
+    char angolo[50] = "Student name 1stYGrade  2ndYGrade  3rdGrade  Avg\n";
 
     char studenti[3][15] = {"StudentA" ,"StudentB","StudentC"};
     
@@ -50,7 +64,19 @@ int main(){
 
     for (int i = 0; i < 3; i++)
     {
-        printf("%s\t\n",studenti[i]);
+        if(i == 0){
+            printf("%s",studenti[i]);
+            printf("     %.2f\t%.2f\t   %.2f\t     %.2f\n",votoA1,votoA2,votoA3,avgA);
+        }
+        if(i == 1){
+            printf("%s",studenti[i]);
+            printf("     %.2f\t%.2f\t   %.2f\t     %.2f\n",votoB1,votoB2,votoB3,avgB);
+        }
+        if(i == 2){
+            printf("%s",studenti[i]);
+            printf("     %.2f\t%.2f\t   %.2f\t     %.2f\n",votoC1,votoC2,votoC3,avgC);
+        }
+        
     }
     
 
