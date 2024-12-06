@@ -27,7 +27,7 @@ Expected output
 */
 
 #include <stdio.h>
-
+#include <string.h>
 int main(){
 
     
@@ -40,9 +40,9 @@ int main(){
     char mount_char [] = "MM";
     char day_char [] = "DD";
     char iso_n[] = "ISO 8601";
-    char formato [] = "format";
+    char formato[] = "format";
 
-    printf("%d-%d-%d - %s-%s-%s %s - %s\n",year,mounth,day,years_char,mount_char,formato,iso_n);
+    printf("%d-%d-%d - %s-%s-%s %s -%s \n",year,mounth,day,years_char,mount_char,formato,(char *)iso_n);
     printf("%d-%d-%d - %s-%s-%s - %s\n",mounth,day,year,mount_char,day_char,years_char,formato );
     printf("%d-%d-%d - %s - %s - %s - %s\n",day,mounth,year,day_char,mount_char,years_char,formato);
 

@@ -28,3 +28,32 @@ StudentA      4.20       4.50       4.20       4.30
 StudentB      4.30       4.40       4.70       4.47
 StudentC      4.30       4.80       4.90       4.67
 */
+
+#include <stdio.h>
+
+int main(){
+
+
+    // studenteA voti :
+
+    float votoA1 = 4.20;
+    float votoA2 = 4.50;
+    float votoA3 = 4.20;
+    float avgA = 4.30;
+
+
+    char angolo[47] = "Student name 1stYGrade 2ndYGrade 3rdGrade Avg\n";
+
+    char studenti[3][15] = {"StudentA" ,"StudentB","StudentC"};
+    
+    printf("%s",angolo);
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%s\t\n",studenti[i]);
+    }
+    
+
+
+    return 0;
+}
