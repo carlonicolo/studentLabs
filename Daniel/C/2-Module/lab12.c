@@ -22,3 +22,20 @@ Expected output
      \    /     
        v       
 */
+
+#include <stdio.h>
+
+int main(){
+
+  printf("       ^\n");
+  printf("     /    \\\n");
+  printf("   /        \\\n");
+  printf(" <           >\n");
+  printf("   \\        /\n");
+  printf("     \\    /\n");
+  printf("       v\n");
+
+  printf("       ^\n     /    \\\n   /        \\\n <           >\n   \\        /\n     \\    /\n       v\n");
+
+  return 0;
+}

@@ -36,21 +36,21 @@ int main(){
     int mounth = 02;
     int day = 20;
 
-    char years_char [] = "YYYY";
-    char mount_char [] = "MM";
-    char day_char [] = "DD";
-    char iso_n[] = "ISO 8601";
-    char formato[] = "format";
+    char years_char[5] = "YYYY";
+    char mount_char[3] = "MM";
+    char day_char[3] = "DD";
+    char iso_n[9] = "ISO 8601";
+    char formato[7] = "format";
 
-    printf("%d-%d-%d - %s-%s-%s %s -%s \n",year,mounth,day,years_char,mount_char,formato,(char *)iso_n);
-    printf("%d-%d-%d - %s-%s-%s - %s\n",mounth,day,year,mount_char,day_char,years_char,formato );
-    printf("%d-%d-%d - %s - %s - %s - %s\n",day,mounth,year,day_char,mount_char,years_char,formato);
+    printf("%d-%d-%d - %s-%s-%s %s -%s\n",year,mounth,day,years_char,mount_char,day_char,formato,iso_n);
+    printf("%d-%d-%d - %s-%s-%s %s\n",mounth,day,year,mount_char,day_char,years_char,formato );
+    printf("%d-%d-%d - %s-%s-%s %s\n",day,mounth,year,day_char,mount_char,years_char,formato);
 
     char d = 'D';
     char m = 'M';
     char y = 'Y';
     int mese = 2;
-    printf("%d-%d-%d - %c-%c-%c - %s\n",day,mese,year,d,m,y,formato);
+    printf("%d-%d-%d - %c-%c-%c %s\n",day,mese,year,d,m,y,formato);
 
 
 

@@ -36,3 +36,47 @@ Value B: 4.18
 9.130000 - 4.180000 = 4.950000.
 9.130000 * 4.180000 = 38.163399.
 */
+
+#include <stdio.h>
+
+int main(){
+
+    float valueA = 0;
+    float valueB = 0;
+    
+    
+    // first case
+
+    printf("Insert a number float : ");
+    scanf("%f",&valueA);
+    printf("Insert a number float : ");
+    scanf("%f",&valueB);
+
+    printf("Value A : %.1f\n",valueA);
+    printf("Value A : %.1f\n",valueB);
+
+    printf("%f + %f = %f\n",valueA,valueB,(valueA + valueB));
+    printf("%f - %f = %f\n",valueA,valueB,(valueA - valueB));
+    printf("%f * %f = %f\n",valueA,valueB,(valueA * valueB));
+    printf("######################");
+
+    // second case
+
+    float value_A = 0;
+    float value_B = 0;
+
+    printf("Insert a number float : ");
+    scanf("%f",&value_A);
+    printf("Insert a number float : ");
+    scanf("%f",&value_B);
+
+    printf("Value A : %.1f\n",value_A);
+    printf("Value A : %.1f\n",value_B);
+
+    printf("%f + %f = %f\n",value_A,value_B,(value_A + value_B));
+    printf("%f - %f = %f\n",value_A,value_B,(value_A - value_B));
+    printf("%f * %f = %f\n",value_A,value_B,(value_A * value_B));
+
+
+    return 0;
+}

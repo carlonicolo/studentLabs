@@ -47,3 +47,60 @@ There is no such day: -1. Input value must be from 1 to 7.
 
 
 */
+
+#include <stdio.h>
+
+int main(){
+
+    int dayOfWeek = 0;
+    char flag = 'O';
+
+    while (flag=='O')
+    {
+        printf("Enter the day of the week (1-7): ");
+        scanf("%d",&dayOfWeek);
+
+        if(dayOfWeek == 1){
+            printf("The day of week is: Monday\n");
+            
+        }
+        else if (dayOfWeek == 2)
+        {
+            printf("The day of week is: Tuesday\n");
+        }
+        else if (dayOfWeek == 3)
+        {
+            printf("The day of week is: Wednesday\n");
+        }
+        else if (dayOfWeek == 4)
+        {
+            printf("The day of week is: Thursday\n");
+        }
+        else if (dayOfWeek == 5)
+        {
+            printf("The day of week is: Friday\n");
+        }
+        else if (dayOfWeek == 6)
+        {
+            printf("The day of week is: Saturday\n");
+        }
+        else if (dayOfWeek == 7)
+        {
+            printf("The day of week is: Sunday\n");
+        }
+        else if (dayOfWeek > 7)
+        {
+            printf("Invalid input. Please enter a number between 1 and 7.\n");
+        }
+        else if (dayOfWeek < 0)
+        {
+            printf("Invalid input. Please enter a number between 1 and 7.\n");
+            printf("is no such day: %d. Input value must be from 1 to 7.\n",dayOfWeek);
+        }
+        
+    }
+    
+
+
+    return 0;
+}
