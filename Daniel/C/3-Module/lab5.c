@@ -16,7 +16,7 @@ int main(void) {
             max = number;
     } while (number != -1);
     if(counter)
-          printf("The largest number is %d\n",max);
+        printf("The largest number is %d\n",max);
     else 
         printf("Are you kidding? You haven't entered any number!");
     return 0;
