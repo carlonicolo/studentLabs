@@ -53,9 +53,7 @@ int main()
 {
 
 	int number_Imput;
-	char stamp[3] = "*#";
-	int count = 0;
-
+	
 	printf("Insert a number of line do you want : ");
 	scanf("%d", &number_Imput);
 	/*
@@ -96,10 +94,12 @@ int main()
 		}
 	*/
 
+	
+
 	if (number_Imput <= 1)
 	{
 		printf("*#\n");
-		count = number_Imput;
+		
 	}
 	else if (number_Imput >= 2 && number_Imput <= 20)
 	{
