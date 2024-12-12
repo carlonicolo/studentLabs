@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "multipli.h"
+#include "mul.h"
 
 
 int mul(int param1, int param2) {

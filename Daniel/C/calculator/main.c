@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "sum.h"
 #include "sub.h"
-#include "multipli.h"
+#include "mul.h"
 
 int main() {
     int param1 = 10, param2 = 5;
