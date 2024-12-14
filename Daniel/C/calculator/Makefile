@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -std=c11 -g
 TARGET = calculator
 
 # Source files and object files
-SRC = main.c sum.c sub.c mul.c
+SRC = main.c sum.c sub.c mul.c div.c
 OBJ = $(SRC:.c=.o)
 
 # Default target

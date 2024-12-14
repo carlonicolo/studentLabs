@@ -3,4 +3,4 @@
 
 int mul(int param1, int param2);    // Function prototype, its declaration
 
-#endif /* MULTIPLI_H */
+#endif /* MUL_H */
