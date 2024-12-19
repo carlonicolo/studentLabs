@@ -15,7 +15,12 @@ int mult(int a, int b)
     return a * b;
 }
 
-int div(int a, int b)
+float div(float s, float f)
 {
-    return a / b;
+    return s / f;
+}
+
+int quadrato(int c)
+{
+    return c*c;
 }

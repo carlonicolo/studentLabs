@@ -21,8 +21,14 @@ START_TEST(test_mult) {
 END_TEST
 
 START_TEST(test_div) {
-    ck_assert_int_eq(div(10, 2), 5);
+    ck_assert_int_eq(div(10, 2.5), 4);
     ck_assert_int_eq(div(20, 10), 2);
+}
+END_TEST
+
+START_TEST(test_quadrato) {
+    ck_assert_int_eq(quadrato(10), 100);
+    ck_assert_int_eq(quadrato(6),36 );
 }
 END_TEST
 
@@ -39,6 +45,7 @@ Suite *math_utils_suite(void) {
     tcase_add_test(tc_core, test_subtract);
     tcase_add_test(tc_core, test_mult);
     tcase_add_test(tc_core, test_div);
+    tcase_add_test(tc_core, test_quadrato);
     suite_add_tcase(s, tc_core);
 
     return s;
