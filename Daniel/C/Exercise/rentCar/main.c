@@ -22,6 +22,7 @@ int main()
     char accesso = 'L';
     char visita = 'S';
     char uscita = '0';
+    char restituzione = 'R'; 
     int giorni;
 
 
@@ -35,7 +36,7 @@ int main()
 
         struct SelezioneCliente selection;
 
-        printf("[L] per il login altrimenti [S] per consultare i modelli [0] per uscire\n");
+        printf("[L] per il login altrimenti\n[S] per consultare i modelli\n[R] per riconsegnare un auto\n[0] per uscire\n");
         scanf("%c", &utente_scelta);
 
         if (utente_scelta == accesso)
@@ -85,6 +86,13 @@ int main()
         else if (utente_scelta == visita)
         {
             lista_modelli_motorizzazioni();
+        }
+        else if (utente_scelta == restituzione)
+        {
+            float costo_totale;
+            costo_totale = restituizione();
+            printf("Il noleggio ha un costo totale di : %.2f euro\n", costo_totale);
+            printf("------------------------------------------------------------------\n");
         }
         else if (utente_scelta == uscita)
         {

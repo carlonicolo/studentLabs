@@ -387,3 +387,104 @@ void lista_modelli_motorizzazioni()
     }
     printf("\n");
 }
+
+float calcolo_noleggio_restituito(char *modello, char *motorizzazione, float km_percorsi, int giorni)
+{
+    int costo_modello;
+    int costo_motorizzazione;
+    float costo_totale;
+    int costo_fisso_km = 200;
+
+    if (strcmp(modello, "Audi") == 0)
+    {
+
+        costo_modello = 50;
+    }
+    if (strcmp(modello, "Bmw") == 0)
+    {
+
+        costo_modello = 70;
+    }
+    if (strcmp(modello, "Merceds") == 0)
+    {
+
+        costo_modello = 85;
+    }
+    if (strcmp(modello, "Tesla") == 0)
+    {
+
+        costo_modello = 100;
+    }
+
+    // Controllo il costo della motorizzazione
+    if (strcmp(motorizzazione, "Benzina") == 0)
+    {
+
+        costo_motorizzazione = 20;
+    }
+    if (strcmp(motorizzazione, "Diesel") == 0)
+    {
+
+        costo_motorizzazione = 30;
+    }
+    if (strcmp(motorizzazione, "Ibrida") == 0)
+    {
+
+        costo_motorizzazione = 15;
+    }
+    if (strcmp(motorizzazione, "Elettrica") == 0)
+    {
+
+        costo_motorizzazione = 10;
+    }
+
+    if (km_percorsi > 1000)
+    {
+
+        // costo km in più dopo i mille : 2
+        int plus;
+        int costo_maggiorato;
+        int costo_fisso_km = 200;
+
+        plus = km_percorsi - 1000;
+        costo_maggiorato = (plus * 5) + costo_fisso_km;
+        costo_totale = (costo_modello + costo_motorizzazione) * giorni + costo_maggiorato;
+        return costo_totale;
+    }
+    else
+    {
+
+        costo_totale = (costo_modello + costo_motorizzazione) * giorni + costo_fisso_km;
+        return costo_totale;
+    }
+}
+
+int restituizione()
+{
+
+    char modello[20];
+    char motorizzazione[20];
+    float km_percorsi;
+    int giorni;
+    float costo_totale;
+
+    int flag = 0;
+
+    while (flag == 0)
+    {
+
+        printf("Inserisci il modello di auto che hai noleggiato : ");
+        scanf("%s", modello);
+        printf("Inserisci la motorizzazione di auto che hai noleggiato : ");
+        scanf("%s", motorizzazione);
+        printf("Inserisci i kilometri che hai percorso : ");
+        scanf("%f", &km_percorsi);
+        printf("Inserisci il numero di giorni che hai noleggiato : ");
+        scanf("%d", &giorni);
+
+        costo_totale = calcolo_noleggio_restituito(modello, motorizzazione, km_percorsi, giorni);
+
+        return costo_totale;
+    }
+    return 0;
+}
